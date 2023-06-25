@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreateDozentDock</class>
+ <widget class="QDockWidget" name="CreateDozentDock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>233</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dozenten erstellen</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="nachname_lineEdit">
+      <property name="placeholderText">
+       <string>Nachname</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="vorname_lineEdit">
+      <property name="placeholderText">
+       <string>Vorname</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="email_lineEdit">
+      <property name="placeholderText">
+       <string>E-Mail</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="passwort_lineEdit">
+      <property name="placeholderText">
+       <string>Passwort</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="passwort_wiederholt_lineEdit">
+      <property name="placeholderText">
+       <string>Passwort wiederholen</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="error_label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="erstellen_pushButton">
+      <property name="text">
+       <string>Dozenten erstellen</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

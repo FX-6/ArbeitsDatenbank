@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ArbeitDock</class>
+ <widget class="QDockWidget" name="ArbeitDock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>409</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DockWidget</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="titel_lineEdit">
+      <property name="placeholderText">
+       <string>Titel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="typ_comboBox">
+      <property name="placeholderText">
+       <string>Typ</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="betreuer_label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="bearbeiter_lineEdit">
+      <property name="placeholderText">
+       <string>Bearbeiter</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="status_comboBox">
+      <property name="placeholderText">
+       <string>Bearbeitungsstatus</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="studiengang_lineEdit">
+      <property name="placeholderText">
+       <string>Studiengang</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="stichwort_lineEdit">
+      <property name="placeholderText">
+       <string>Stichwortliste</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="erlauterung_lineEdit">
+      <property name="placeholderText">
+       <string>Erläuterung</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0">
+      <item>
+       <widget class="QLabel" name="von_label">
+        <property name="text">
+         <string>Von</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="von_lineEdit">
+        <property name="placeholderText">
+         <string>Von</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bis_label">
+        <property name="text">
+         <string>Bis</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="bis_lineEdit">
+        <property name="placeholderText">
+         <string>Bis</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="firma_lineEdit">
+      <property name="placeholderText">
+       <string>Firma</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="semester_lineEdit">
+      <property name="placeholderText">
+       <string>Semester</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="error_label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="loschen_pushButton">
+        <property name="text">
+         <string>Arbeit löschen</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="speichern_pushButton">
+        <property name="text">
+         <string>Änderungen speichern</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

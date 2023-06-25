@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreateArbeitDock</class>
+ <widget class="QDockWidget" name="CreateArbeitDock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>233</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Arbeit erstellen</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QComboBox" name="typ_comboBox">
+      <property name="placeholderText">
+       <string>Typ</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="titel_lineEdit">
+      <property name="placeholderText">
+       <string>Titel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="bearbeiter_lineEdit">
+      <property name="placeholderText">
+       <string>Bearbeiter</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="status_comboBox">
+      <property name="placeholderText">
+       <string>Bearbeitungsstatus</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="studiengang_lineEdit">
+      <property name="placeholderText">
+       <string>Studiengang</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="error_label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="create_pushButton">
+      <property name="text">
+       <string>Arbeit erstellen</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

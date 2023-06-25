@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UpdatePasswortDock</class>
+ <widget class="QDockWidget" name="UpdatePasswortDock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>311</width>
+    <height>195</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Passwort ändern</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="info_label">
+      <property name="text">
+       <string>Aus Sicherheitsgründen müssen sie ihr Passwort ändern</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="altes_passwort_lineEdit">
+      <property name="placeholderText">
+       <string>Altes Passwort</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="neues_passwort_lineEdit">
+      <property name="placeholderText">
+       <string>Neues Passwort</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="neues_passwort_wiederholt_lineEdit">
+      <property name="placeholderText">
+       <string>Neues Passwort wiederholen</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="error_label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="andern_pushButton">
+      <property name="text">
+       <string>Passwort ändern</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

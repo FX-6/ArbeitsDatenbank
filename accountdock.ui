@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AccountDock</class>
+ <widget class="QDockWidget" name="AccountDock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>345</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dozent</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="nachname_lineEdit">
+      <property name="placeholderText">
+       <string>Nachname</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="vorname_lineEdit">
+      <property name="placeholderText">
+       <string>Vorname</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="email_lineEdit">
+      <property name="placeholderText">
+       <string>E-Mail</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="passwort_andern_pushButton">
+      <property name="text">
+       <string>Passwort ändern</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="loschen_pushButton">
+      <property name="text">
+       <string>Dozenten löschen</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="info_label">
+      <property name="text">
+       <string>Diese Änderung benötigt weiter Eingaben:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="aktuelles_passwort_lineEdit">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Aktuelles Passwort</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="neues_passwort_lineEdit">
+      <property name="placeholderText">
+       <string>Neues Passwort</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="neues_passwort_wiederholt_lineEdit">
+      <property name="placeholderText">
+       <string>Neues Passwort wiederholen</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="error_label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="bestatigen_pushButton">
+      <property name="text">
+       <string>Änderungen übernehmen</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
