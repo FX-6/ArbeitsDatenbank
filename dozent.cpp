@@ -2,8 +2,6 @@
 
 #include <QtSql/QSqlQuery>
 
-#include <iostream>
-
 Dozent::Dozent(int dozenten_id) : id(dozenten_id) {}
 
 Dozent::Dozent(QString email) {
@@ -91,8 +89,6 @@ bool Dozent::get_muss_passwort_andern() {
 }
 
 bool Dozent::set_vorname(QString neuer_vorname) {
-    std::cout << "neuer_vorname: " << neuer_vorname.toStdString() << " id: " << this->get_id() << std::endl;
-
     QSqlQuery query;
     query.prepare("UPDATE dozenten SET vorname = ? WHERE dozent_id = ?;");
     query.addBindValue(neuer_vorname);

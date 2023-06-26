@@ -31,4 +31,8 @@ Fügt Testdaten in die Datenbank ein.
 ### `--db_name <filepath>`
 
 Ändert den Pfad zur Datenbank. \
-Standard ist: `C:\Users\<user>\AppData\Roaming\ArbeitsDatenbank_GR8\db.sql`
+Muss den Name der Datei enthalten. \
+Alle Ordner im Pfad müssen existieren.
+
+Standard ist: `C:\Users\<user>\AppData\Roaming\ArbeitsDatenbank_GR8\db.sql` \
+Der Standardpfad wird automatisch erstellt.

@@ -1,4 +1,5 @@
 #include "createarbeitdock.h"
+
 #include "ui_createarbeitdock.h"
 
 CreateArbeitDock::CreateArbeitDock(DBAccess *db, Dozent *dozent, QWidget *parent) : QDockWidget(parent), ui(new Ui::CreateArbeitDock), db(db), dozent(dozent) {

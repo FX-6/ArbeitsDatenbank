@@ -7,11 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>409</height>
+    <height>481</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>DockWidget</string>
+   <string>Arbeit</string>
   </property>
   <widget class="QWidget" name="dockWidgetContents">
    <layout class="QVBoxLayout" name="verticalLayout">

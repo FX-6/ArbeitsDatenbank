@@ -2,6 +2,7 @@
 #define ARBEIT_H
 
 #include <QString>
+
 #include "dozent.h"
 
 class Arbeit {

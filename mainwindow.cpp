@@ -9,8 +9,6 @@
 #include "createdozentdock.h"
 #include "createarbeitdock.h"
 
-#include <iostream>
-
 MainWindow::MainWindow(DBAccess *db, QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow), db(db) {
     // Setup UI
     ui->setupUi(this);
@@ -114,6 +112,12 @@ void MainWindow::refresh_dozenten_list() {
 }
 
 void MainWindow::on_login_pushButton_clicked() {
+    // Cancel if other dialog is open
+    if (this->dialog_open) {
+        return;
+    }
+    this->dialog_open = true;
+
     // Create dialog
     LoginDock *login_dialog = new LoginDock(this->db, this);
 
@@ -126,6 +130,7 @@ void MainWindow::on_login_pushButton_clicked() {
     // Add Signals/Slots
     QObject::connect(login_dialog, SIGNAL(login_as_dozent(int,LoginDock*)), this, SLOT(login_as_dozent(int,LoginDock*)));
     QObject::connect(login_dialog, SIGNAL(login_as_admin(int,LoginDock*)), this, SLOT(login_as_admin(int,LoginDock*)));
+    QObject::connect(login_dialog, SIGNAL(visibilityChanged(bool)), this, SLOT(dialog_closed(bool)));
 }
 
 void MainWindow::arbeit_clicked(QListWidgetItem *item) {
@@ -152,7 +157,6 @@ void MainWindow::arbeit_clicked(QListWidgetItem *item) {
 
     // Add Signals/Slots
     QObject::connect(dialog, SIGNAL(visibilityChanged(bool)), this, SLOT(dialog_closed(bool)));
-
 }
 
 void MainWindow::dozent_clicked(QListWidgetItem *item) {
@@ -421,26 +425,32 @@ void MainWindow::on_clear_betreuer_pushButton_clicked() {
 }
 
 void MainWindow::on_titel_lineEdit_textChanged(const QString &arg1) {
+    // Apply filters when input occurs
     this->refresh_arbeiten_list();
 }
 
 void MainWindow::on_stichwort_lineEdit_textChanged(const QString &arg1) {
+    // Apply filters when input occurs
     this->refresh_arbeiten_list();
 }
 
 void MainWindow::on_betreuer_comboBox_currentIndexChanged(int index) {
+    // Apply filters when input occurs
     this->refresh_arbeiten_list();
     this->refresh_dozenten_list();
 }
 
 void MainWindow::on_von_lineEdit_textChanged(const QString &arg1) {
+    // Apply filters when input occurs
     this->refresh_arbeiten_list();
 }
 
 void MainWindow::on_bis_lineEdit_textChanged(const QString &arg1) {
+    // Apply filters when input occurs
     this->refresh_arbeiten_list();
 }
 
 void MainWindow::on_bearbeiter_lineEdit_textChanged(const QString &arg1) {
+    // Apply filters when input occurs
     this->refresh_arbeiten_list();
 }

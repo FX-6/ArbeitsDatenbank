@@ -1,4 +1,5 @@
 #include "arbeitdock.h"
+
 #include "ui_arbeitdock.h"
 
 ArbeitDock::ArbeitDock(Arbeit *arbeit, QWidget *parent) : QDockWidget(parent), ui(new Ui::ArbeitDock), arbeit(arbeit) {

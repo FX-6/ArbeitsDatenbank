@@ -1,8 +1,6 @@
 #include "accountdock.h"
 #include "ui_accountdock.h"
 
-#include <iostream>
-
 AccountDock::AccountDock(Dozent *dozent, QWidget *parent) : QDockWidget(parent), ui(new Ui::AccountDock), dozent(dozent) {
     // Setup UI
     ui->setupUi(this);
@@ -45,8 +43,6 @@ AccountDock::AccountDock(Admin *admin, Dozent *dozent, QWidget *parent) : QDockW
         ui->nachname_lineEdit->setText(this->og_nachname);
         ui->vorname_lineEdit->setText(this->og_vorname);
         ui->email_lineEdit->setText(this->og_email);
-
-        std::cout << "Dozent: " << dozent->get_name().toStdString() << " " << dozent->get_id() << std::endl;
     } else {
         // Adjust visibility of UI Elements
         ui->nachname_lineEdit->hide();
